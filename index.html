@@ -1,209 +1,198 @@
-export default function SpotlightFilmsSite() {
-  const sections = [
-    { title: "Films", text: "ドキュメンタリーや映画作品を通じて、地域に眠る物語、人の想い、未来へ受け渡すべき記憶を形にします。" },
-    { title: "Studio", text: "中津峰のふもとにある古民家拠点をベースに、企画、編集、対話、合宿など、人が集まり物語が生まれる場を育てます。" },
-    { title: "Projects", text: "上映会、地域文化の記録、インタビューアーカイブ、地域プロダクトなどを通じて、新しい文化の循環をつくります。" },
-    { title: "People", text: "映画、対話、学びを通して、人が人らしくあり、自分の可能性を思い出せる環境づくりを目指します。" },
-  ];
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>SPOTLIGHT FILMS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  const projects = [
-    {
-      title: "Films",
-      description: "映画・ドキュメンタリー・映像作品の企画、撮影、編集、制作。未来に残る物語を形にします。",
-    },
-    {
-      title: "Studio",
-      description: "SPOTLIGHT STUDIO NAKATSUMINEを拠点に、企画、編集、対話、合宿など、物語が育つ環境をつくります。",
-    },
-    {
-      title: "Projects",
-      description: "地域文化の記録、上映会、インタビューアーカイブ、地域プロジェクトの伴走と発信。",
-    },
-    {
-      title: "Education",
-      description: "合宿、ワークショップ、表現やキャリアの対話を通して、人の可能性をひらく場づくり。",
-    },
-    {
-      title: "Culture Cycle",
-      description: "農産物、ドライみかん、地域プロダクトなど、土地の恵みと文化の循環につながる取り組み。",
-    },
-    {
-      title: "Future Lab",
-      description: "アプリ、デジタルサービス、コミュニティ設計など、これからの表現とつながりを探る実験領域。",
-    },
-  ];
+<style>
 
-  return (
-    <div className="min-h-screen bg-stone-50 text-stone-900">
-      <section className="relative overflow-hidden border-b border-stone-200 bg-gradient-to-b from-stone-900 via-stone-800 to-stone-700 text-white">
-        <div className="absolute inset-0 opacity-20">
-          <div className="absolute -top-24 left-[-5%] h-72 w-72 rounded-full bg-amber-300 blur-3xl" />
-          <div className="absolute right-[-8%] top-28 h-80 w-80 rounded-full bg-orange-200 blur-3xl" />
-        </div>
-        <div className="relative mx-auto max-w-6xl px-6 py-24 md:px-10 md:py-32">
-          <div className="max-w-3xl">
-            <div className="mb-5 inline-flex items-center rounded-full border border-white/20 bg-white/10 px-4 py-1 text-sm tracking-[0.2em] text-stone-100 backdrop-blur">
-              TOKUSHIMA, JAPAN
-            </div>
-            <h1 className="text-4xl font-semibold leading-tight md:text-6xl md:leading-[1.1]">
-              SPOTLIGHT FILMS
-            </h1>
-            <p className="mt-4 text-lg uppercase tracking-[0.28em] text-stone-300 md:text-xl">
-              Story &amp; Culture Studio
-            </p>
-            <p className="mt-6 text-lg leading-8 text-stone-200 md:text-xl">
-              物語に光を、人に可能性を。
-              <br className="hidden md:block" />
-              未来に残る物語をつくる。
-              <br className="hidden md:block" />
-              人が人らしくある環境を。
-            </p>
-            <div className="mt-8 flex flex-wrap gap-3">
-              <a
-                href="https://nokosu-film.vercel.app/"
-                className="rounded-2xl bg-white px-5 py-3 text-sm font-medium text-stone-900 shadow-lg transition hover:-translate-y-0.5"
-              >
-                作品サイトを見る
-              </a>
-              <a
-                href="#about"
-                className="rounded-2xl border border-white/25 bg-white/10 px-5 py-3 text-sm font-medium text-white backdrop-blur transition hover:bg-white/15"
-              >
-                会社概要へ
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="mx-auto max-w-6xl px-6 py-16 md:px-10">
-        <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-4">
-          {sections.map((item) => (
-            <div key={item.title} className="rounded-3xl border border-stone-200 bg-white p-6 shadow-sm">
-              <div className="text-sm font-semibold uppercase tracking-[0.2em] text-stone-500">{item.title}</div>
-              <p className="mt-4 text-base leading-7 text-stone-700">{item.text}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <section id="about" className="border-y border-stone-200 bg-white">
-        <div className="mx-auto grid max-w-6xl gap-10 px-6 py-16 md:px-10 lg:grid-cols-[1.2fr_0.8fr]">
-          <div>
-            <div className="text-sm font-semibold uppercase tracking-[0.25em] text-stone-500">About</div>
-            <h2 className="mt-3 text-3xl font-semibold md:text-4xl">会社について</h2>
-            <p className="mt-6 text-lg leading-8 text-stone-700">
-              SPOTLIGHT FILMSは徳島を拠点とする映像制作スタジオであり、Story &amp; Culture Studioです。
-              地域に眠る物語、人の想い、未来へ受け渡すべき記憶を映画として残すことを目的に活動しています。
-            </p>
-            <p className="mt-4 text-lg leading-8 text-stone-700">
-              映画制作だけでなく、上映会、対話、合宿、地域プロジェクトなどを通して、
-              人が人らしく生きる環境をつくることを目指しています。
-            </p>
-          </div>
-          <div className="rounded-3xl border border-stone-200 bg-stone-50 p-6 shadow-sm">
-            <div className="text-sm font-semibold uppercase tracking-[0.25em] text-stone-500">Company Profile</div>
-            <dl className="mt-5 space-y-4 text-sm md:text-base">
-              <div className="border-b border-stone-200 pb-4">
-                <dt className="text-stone-500">Company Name</dt>
-                <dd className="mt-1 font-medium text-stone-900">合同会社SPOTLIGHT FILMS</dd>
-              </div>
-              <div className="border-b border-stone-200 pb-4">
-                <dt className="text-stone-500">English Name</dt>
-                <dd className="mt-1 font-medium text-stone-900">SPOTLIGHT FILMS LLC</dd>
-              </div>
-              <div className="border-b border-stone-200 pb-4">
-                <dt className="text-stone-500">Concept</dt>
-                <dd className="mt-1 font-medium text-stone-900">Story &amp; Culture Studio</dd>
-              </div>
-              <div className="border-b border-stone-200 pb-4">
-                <dt className="text-stone-500">Founder / Studio Director</dt>
-                <dd className="mt-1 font-medium text-stone-900">山本 晃大</dd>
-              </div>
-              <div className="border-b border-stone-200 pb-4">
-                <dt className="text-stone-500">Capital</dt>
-                <dd className="mt-1 font-medium text-stone-900">100,000 JPY</dd>
-              </div>
-              <div>
-                <dt className="text-stone-500">Location</dt>
-                <dd className="mt-1 font-medium text-stone-900">徳島県阿南市</dd>
-              </div>
-            </dl>
-          </div>
-        </div>
-      </section>
-
-      <section className="mx-auto max-w-6xl px-6 py-16 md:px-10">
-        <div className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
-          <div>
-            <div className="text-sm font-semibold uppercase tracking-[0.25em] text-stone-500">Projects</div>
-            <h2 className="mt-3 text-3xl font-semibold md:text-4xl">活動領域</h2>
-          </div>
-          <p className="max-w-2xl text-base leading-7 text-stone-600 md:text-lg">
-            映画、地域、教育、循環。ばらばらに見える営みを、ひとつの思想でつなぐスタジオとして活動しています。
-          </p>
-        </div>
-        <div className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-          {projects.map((project) => (
-            <div key={project.title} className="rounded-3xl border border-stone-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
-              <h3 className="text-xl font-semibold">{project.title}</h3>
-              <p className="mt-4 leading-7 text-stone-700">{project.description}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <section className="border-y border-stone-200 bg-stone-900 text-white">
-        <div className="mx-auto max-w-6xl px-6 py-16 md:px-10">
-          <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
-            <div>
-              <div className="text-sm font-semibold uppercase tracking-[0.25em] text-stone-300">Studio</div>
-              <h2 className="mt-3 text-3xl font-semibold md:text-4xl">SPOTLIGHT STUDIO NAKATSUMINE</h2>
-              <p className="mt-6 text-lg leading-8 text-stone-300">
-                徳島・中津峰のふもとにある古民家を拠点とした制作スタジオ。
-                映画制作の企画・編集、上映会、対話、合宿など、人が集まり物語が生まれる場として運営していきます。
-              </p>
-              <p className="mt-4 text-lg leading-8 text-stone-300">
-                山の反射光のように、地域にある小さな物語を見つけ、光を当て、映画として世界へ送り出していく場所です。
-              </p>
-            </div>
-            <div className="rounded-[2rem] border border-white/10 bg-white/5 p-7 backdrop-blur">
-              <div className="text-sm font-semibold uppercase tracking-[0.25em] text-stone-300">Current Film</div>
-              <h3 className="mt-3 text-2xl font-semibold">残すということ</h3>
-              <p className="mt-4 leading-7 text-stone-300">
-                地域に残された想いと未来への責任を描くドキュメンタリー。
-                祖父の世代が残した桜並木や地域の営みを起点に、「人はなぜ地域のために生きるのか」を探ります。
-              </p>
-              <a
-                href="https://nokosu-film.vercel.app/"
-                className="mt-6 inline-flex rounded-2xl bg-white px-5 py-3 text-sm font-medium text-stone-900"
-              >
-                プロジェクトを見る
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="mx-auto max-w-6xl px-6 py-16 md:px-10">
-        <div className="rounded-[2rem] border border-stone-200 bg-white p-8 shadow-sm md:p-10">
-          <div className="grid gap-8 md:grid-cols-[1fr_0.9fr] md:items-end">
-            <div>
-              <div className="text-sm font-semibold uppercase tracking-[0.25em] text-stone-500">Contact</div>
-              <h2 className="mt-3 text-3xl font-semibold md:text-4xl">ご相談・ご連絡</h2>
-              <p className="mt-5 text-lg leading-8 text-stone-700">
-                映画制作、上映、地域プロジェクト、合宿やワークショップなどのご相談を受け付けています。
-              </p>
-            </div>
-            <div className="rounded-3xl bg-stone-50 p-6">
-              <div className="text-sm text-stone-500">Email</div>
-              <div className="mt-2 text-lg font-medium text-stone-900">spotlightfilms.jp@gmail.com</div>
-              <div className="mt-5 text-sm text-stone-500">Base</div>
-              <div className="mt-2 text-lg font-medium text-stone-900">SPOTLIGHT STUDIO NAKATSUMINE / Anan, Tokushima, Japan</div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-  );
+body{
+margin:0;
+font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial;
+background:#0b0b0f;
+color:#f2f2f2;
+line-height:1.8;
 }
+
+.container{
+max-width:900px;
+margin:auto;
+padding:60px 30px;
+}
+
+h1{
+font-size:46px;
+letter-spacing:4px;
+margin-bottom:10px;
+}
+
+.subtitle{
+font-size:16px;
+opacity:0.7;
+letter-spacing:2px;
+margin-bottom:40px;
+}
+
+.tagline{
+font-size:22px;
+margin-top:40px;
+margin-bottom:30px;
+}
+
+.section{
+margin-top:80px;
+}
+
+h2{
+font-size:28px;
+margin-bottom:20px;
+}
+
+p{
+opacity:0.9;
+}
+
+.card{
+background:#15151a;
+padding:30px;
+border-radius:16px;
+margin-top:30px;
+}
+
+a{
+color:#e6c76e;
+text-decoration:none;
+}
+
+footer{
+margin-top:120px;
+font-size:14px;
+opacity:0.5;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>SPOTLIGHT FILMS</h1>
+<div class="subtitle">Story & Culture Studio</div>
+
+<div class="tagline">
+物語に光を、人に可能性を。
+</div>
+
+<p>
+未来に残る物語をつくる。<br>
+人が人らしくある環境を。
+</p>
+
+<p>
+Tokushima, Japan
+</p>
+
+
+<div class="section">
+
+<h2>About</h2>
+
+<p>
+SPOTLIGHT FILMSは徳島を拠点とするStory & Culture Studioです。
+</p>
+
+<p>
+映画制作、地域文化の記録、上映会、対話、教育プロジェクトなどを通して、
+人の想いと地域の物語を未来へ残す活動を行っています。
+</p>
+
+<p>
+映画をつくるだけでなく、
+人が人らしく生きる環境を育てることを目指しています。
+</p>
+
+</div>
+
+
+<div class="section">
+
+<h2>Studio</h2>
+
+<div class="card">
+
+<h3>SPOTLIGHT STUDIO NAKATSUMINE</h3>
+
+<p>
+徳島・中津峰のふもとにある古民家拠点をベースにした制作スタジオ。
+</p>
+
+<p>
+映画制作の企画、編集、上映会、対話、合宿など、
+人が集まり物語が生まれる場として育てていきます。
+</p>
+
+<p>
+山の反射光のように、
+地域にある小さな物語に光を当て、
+映画として世界へ届ける拠点です。
+</p>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>Projects</h2>
+
+<div class="card">
+
+<h3>Documentary Film</h3>
+
+<p>
+残すということ
+</p>
+
+<p>
+祖父の世代が地域に残した桜並木や営みを起点に、
+「人はなぜ地域のために生きるのか」を探るドキュメンタリー。
+</p>
+
+<p>
+<a href="https://nokosu-film.vercel.app/">Project page</a>
+</p>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>Contact</h2>
+
+<p>
+映画制作、上映、地域プロジェクト、合宿などのご相談は
+下記メールまでご連絡ください。
+</p>
+
+<p>
+spotlightfilms.jp@gmail.com
+</p>
+
+</div>
+
+
+<footer>
+
+© SPOTLIGHT FILMS
+
+</footer>
+
+</div>
+
+</body>
+</html>
