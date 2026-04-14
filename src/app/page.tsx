@@ -1,22 +1,22 @@
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white text-neutral-900">
-      <header className="sticky top-0 z-20 border-b border-neutral-200/70 bg-white/80 backdrop-blur">
+    <div className="min-h-screen bg-neutral-950 text-neutral-100">
+      <header className="sticky top-0 z-20 border-b border-white/10 bg-neutral-950/70 backdrop-blur">
         <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
-          <a href="#top" className="text-sm tracking-[0.22em] text-neutral-700">
+          <a href="#top" className="text-sm tracking-[0.22em] text-neutral-200">
             SPOTLIGHT FILMS
           </a>
-          <nav className="hidden gap-6 text-sm text-neutral-600 md:flex">
-            <a href="#about" className="hover:text-neutral-900">
+          <nav className="hidden gap-6 text-sm text-neutral-300 md:flex">
+            <a href="#about" className="hover:text-white">
               About
             </a>
-            <a href="#studio" className="hover:text-neutral-900">
+            <a href="#studio" className="hover:text-white">
               Studio
             </a>
-            <a href="#projects" className="hover:text-neutral-900">
+            <a href="#projects" className="hover:text-white">
               Projects
             </a>
-            <a href="#contact" className="hover:text-neutral-900">
+            <a href="#contact" className="hover:text-white">
               Contact
             </a>
           </nav>
@@ -26,7 +26,7 @@ export default function Home() {
       <main id="top">
         <section className="px-6 py-20 md:py-28">
           <div className="mx-auto max-w-5xl">
-            <p className="text-xs tracking-[0.3em] text-neutral-500">
+            <p className="text-xs tracking-[0.3em] text-neutral-400">
               Tokushima, Japan
             </p>
             <h1
@@ -36,7 +36,7 @@ export default function Home() {
               SPOTLIGHT FILMS
             </h1>
             <p
-              className="mt-6 max-w-2xl text-lg leading-[1.9] text-neutral-700 md:text-xl"
+              className="mt-6 max-w-2xl text-lg leading-[1.9] text-neutral-200 md:text-xl"
               style={{ fontWeight: 300 }}
             >
               Stories that carry light into the future.
@@ -46,13 +46,13 @@ export default function Home() {
             <div className="mt-10 flex flex-col gap-3 sm:flex-row sm:items-center">
               <a
                 href="#contact"
-                className="inline-flex min-h-12 w-full max-w-xs items-center justify-center rounded-full bg-neutral-900 px-6 py-3 text-base font-medium text-white shadow-sm transition-colors hover:bg-neutral-800 sm:w-auto"
+                className="inline-flex min-h-12 w-full max-w-xs items-center justify-center rounded-full bg-white/90 px-6 py-3 text-base font-medium text-neutral-950 shadow-sm transition-colors hover:bg-white sm:w-auto"
               >
                 ご相談・ご連絡
               </a>
               <a
                 href="#projects"
-                className="inline-flex min-h-12 w-full max-w-xs items-center justify-center rounded-full border border-neutral-300 bg-white px-6 py-3 text-base font-medium text-neutral-900 transition-colors hover:bg-neutral-50 sm:w-auto"
+                className="inline-flex min-h-12 w-full max-w-xs items-center justify-center rounded-full border border-white/15 bg-transparent px-6 py-3 text-base font-medium text-neutral-100 transition-colors hover:bg-white/5 sm:w-auto"
               >
                 プロジェクト
               </a>
@@ -64,7 +64,7 @@ export default function Home() {
           <p>
             SPOTLIGHT FILMSは徳島を拠点とする映像制作スタジオです。映画制作、地域文化の記録、上映会、対話、教育プロジェクトなどを通して、人の想いと地域の物語を未来へ残す活動を行っています。
           </p>
-          <h3 className="pt-6 text-lg tracking-wide text-neutral-900 md:text-xl">
+          <h3 className="pt-6 text-lg tracking-wide text-white md:text-xl">
             人が人らしくある環境をつくる
           </h3>
           <p className="pt-3">
@@ -85,7 +85,7 @@ export default function Home() {
           <p>
             徳島・中津峰のふもとにある古民家拠点をベースにした制作スタジオ。映画制作の企画、編集、上映会、対話、合宿など、人が集まり物語が生まれる場として育てていきます。
           </p>
-          <h3 className="pt-6 text-lg tracking-wide text-neutral-900 md:text-xl">
+          <h3 className="pt-6 text-lg tracking-wide text-white md:text-xl">
             山の反射光のように、物語を遠くへ届ける拠点
           </h3>
           <p className="pt-3">
@@ -114,13 +114,13 @@ export default function Home() {
           <p>
             祖父の世代が地域に残した桜並木や営みを起点に、「人はなぜ地域のために生きるのか」を探るドキュメンタリー。
           </p>
-          <p className="pt-3 text-neutral-600">
+          <p className="pt-3 text-neutral-400">
             Documentary in Progress — 地域に残された想いと、未来への責任を見つめ直す映画プロジェクトです。
           </p>
           <div className="pt-8">
             <a
               href="https://nokosu-film.vercel.app/"
-              className="inline-flex min-h-12 items-center justify-center rounded-full border border-neutral-300 bg-white px-6 py-3 text-base font-medium text-neutral-900 transition-colors hover:bg-neutral-50"
+              className="inline-flex min-h-12 items-center justify-center rounded-full border border-white/15 bg-transparent px-6 py-3 text-base font-medium text-neutral-100 transition-colors hover:bg-white/5"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -133,7 +133,7 @@ export default function Home() {
           <p>
             土地の恵みや暮らしの循環につながる取り組みとして、家族の農とものづくりの活動ともゆるやかに連携していきます。
           </p>
-          <p className="pt-3 text-neutral-600">父のみかんサイト：準備中</p>
+          <p className="pt-3 text-neutral-400">父のみかんサイト：準備中</p>
         </Section>
 
         <Section id="contact" eyebrow="Contact" title="ご相談・ご連絡">
@@ -151,8 +151,8 @@ export default function Home() {
         </Section>
       </main>
 
-      <footer className="border-t border-neutral-200 px-6 py-14">
-        <div className="mx-auto max-w-5xl text-sm text-neutral-600">
+      <footer className="border-t border-white/10 px-6 py-14">
+        <div className="mx-auto max-w-5xl text-sm text-neutral-400">
           <p>© SPOTLIGHT FILMS</p>
         </div>
       </footer>
@@ -172,17 +172,17 @@ function Section({
   children: React.ReactNode;
 }) {
   return (
-    <section id={id} className="border-t border-neutral-200 px-6 py-20 md:py-24">
+    <section id={id} className="border-t border-white/10 px-6 py-20 md:py-24">
       <div className="mx-auto max-w-5xl">
-        <p className="text-xs tracking-[0.3em] text-neutral-500">{eyebrow}</p>
+        <p className="text-xs tracking-[0.3em] text-neutral-400">{eyebrow}</p>
         <h2
-          className="mt-4 text-2xl leading-snug tracking-wide text-neutral-900 md:text-3xl"
+          className="mt-4 text-2xl leading-snug tracking-wide text-white md:text-3xl"
           style={{ fontWeight: 300 }}
         >
           {title}
         </h2>
         <div
-          className="pt-8 text-lg leading-[1.9] text-neutral-700 md:text-xl md:leading-[1.9]"
+          className="pt-8 text-lg leading-[1.9] text-neutral-200 md:text-xl md:leading-[1.9]"
           style={{ fontWeight: 300 }}
         >
           {children}
@@ -194,20 +194,20 @@ function Section({
 
 function DefinitionTerm({ label, value }: { label: string; value: string }) {
   return (
-    <div className="rounded-xl border border-neutral-200 bg-white p-5">
-      <dt className="text-sm tracking-wide text-neutral-500">{label}</dt>
-      <dd className="pt-2 text-lg text-neutral-900">{value}</dd>
+    <div className="rounded-xl border border-white/10 bg-white/5 p-5">
+      <dt className="text-sm tracking-wide text-neutral-400">{label}</dt>
+      <dd className="pt-2 text-lg text-neutral-100">{value}</dd>
     </div>
   );
 }
 
 function Card({ title, children }: { title: string; children: React.ReactNode }) {
   return (
-    <div className="rounded-2xl border border-neutral-200 bg-white p-6">
-      <h3 className="text-lg font-medium tracking-wide text-neutral-900">
+    <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
+      <h3 className="text-lg font-medium tracking-wide text-white">
         {title}
       </h3>
-      <p className="pt-3 text-lg leading-[1.9] text-neutral-700">{children}</p>
+      <p className="pt-3 text-lg leading-[1.9] text-neutral-200">{children}</p>
     </div>
   );
 }
