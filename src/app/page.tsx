@@ -1,65 +1,213 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+    <div className="min-h-screen bg-white text-neutral-900">
+      <header className="sticky top-0 z-20 border-b border-neutral-200/70 bg-white/80 backdrop-blur">
+        <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
+          <a href="#top" className="text-sm tracking-[0.22em] text-neutral-700">
+            SPOTLIGHT FILMS
+          </a>
+          <nav className="hidden gap-6 text-sm text-neutral-600 md:flex">
+            <a href="#about" className="hover:text-neutral-900">
+              About
+            </a>
+            <a href="#studio" className="hover:text-neutral-900">
+              Studio
+            </a>
+            <a href="#projects" className="hover:text-neutral-900">
+              Projects
+            </a>
+            <a href="#contact" className="hover:text-neutral-900">
+              Contact
+            </a>
+          </nav>
+        </div>
+      </header>
+
+      <main id="top">
+        <section className="px-6 py-20 md:py-28">
+          <div className="mx-auto max-w-5xl">
+            <p className="text-xs tracking-[0.3em] text-neutral-500">
+              Tokushima, Japan
+            </p>
+            <h1
+              className="mt-4 text-4xl tracking-wide md:text-6xl"
+              style={{ fontWeight: 300 }}
             >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+              SPOTLIGHT FILMS
+            </h1>
+            <p
+              className="mt-6 max-w-2xl text-lg leading-[1.9] text-neutral-700 md:text-xl"
+              style={{ fontWeight: 300 }}
             >
-              Learning
-            </a>{" "}
-            center.
+              Stories that carry light into the future.
+              <br />
+              物語に光を、人に可能性を。
+            </p>
+            <div className="mt-10 flex flex-col gap-3 sm:flex-row sm:items-center">
+              <a
+                href="#contact"
+                className="inline-flex min-h-12 w-full max-w-xs items-center justify-center rounded-full bg-neutral-900 px-6 py-3 text-base font-medium text-white shadow-sm transition-colors hover:bg-neutral-800 sm:w-auto"
+              >
+                ご相談・ご連絡
+              </a>
+              <a
+                href="#projects"
+                className="inline-flex min-h-12 w-full max-w-xs items-center justify-center rounded-full border border-neutral-300 bg-white px-6 py-3 text-base font-medium text-neutral-900 transition-colors hover:bg-neutral-50 sm:w-auto"
+              >
+                プロジェクト
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <Section id="about" eyebrow="About" title="Story & Culture Studioとして">
+          <p>
+            SPOTLIGHT FILMSは徳島を拠点とする映像制作スタジオです。映画制作、地域文化の記録、上映会、対話、教育プロジェクトなどを通して、人の想いと地域の物語を未来へ残す活動を行っています。
           </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+          <h3 className="pt-6 text-lg tracking-wide text-neutral-900 md:text-xl">
+            人が人らしくある環境をつくる
+          </h3>
+          <p className="pt-3">
+            映画をつくること自体が目的ではなく、物語に光を当て、人が自分の可能性やルーツを思い出せる環境を育てることを目指しています。
+          </p>
+        </Section>
+
+        <Section id="company" eyebrow="Company" title="合同会社SPOTLIGHT FILMS">
+          <dl className="grid gap-5 pt-2 md:grid-cols-2 md:gap-x-10">
+            <DefinitionTerm label="English Name" value="SPOTLIGHT FILMS LLC" />
+            <DefinitionTerm label="Concept" value="Story & Culture Studio" />
+            <DefinitionTerm label="Founder / Studio Director" value="山本晃大" />
+            <DefinitionTerm label="Base" value="徳島県阿南市" />
+          </dl>
+        </Section>
+
+        <Section id="studio" eyebrow="Studio" title="SPOTLIGHT STUDIO NAKATSUMINE">
+          <p>
+            徳島・中津峰のふもとにある古民家拠点をベースにした制作スタジオ。映画制作の企画、編集、上映会、対話、合宿など、人が集まり物語が生まれる場として育てていきます。
+          </p>
+          <h3 className="pt-6 text-lg tracking-wide text-neutral-900 md:text-xl">
+            山の反射光のように、物語を遠くへ届ける拠点
+          </h3>
+          <p className="pt-3">
+            山の反射光のように、地域にある小さな物語に光を当て、映画として世界へ届ける場所です。ここから各地のロケーションへ出て、物語を探し、記録し、未来へつないでいきます。
+          </p>
+        </Section>
+
+        <Section id="projects" eyebrow="Projects" title="映画から、場へ、文化へ">
+          <p>
+            SPOTLIGHT FILMSでは、映画制作を中心にしながら、地域文化の記録、上映会、対話、合宿、地域プロダクトなど、文化の循環につながる活動を広げていきます。
+          </p>
+          <div className="grid gap-5 pt-8 md:grid-cols-3">
+            <Card title="Films">
+              ドキュメンタリーや映画作品を通して、地域に眠る物語や人の想いを形にします。
+            </Card>
+            <Card title="Gatherings">
+              上映会、対話、ワークショップ、合宿など、人が出会い、語り合う場をひらきます。
+            </Card>
+            <Card title="Culture Cycle">
+              地域プロジェクト、農産物、プロダクト企画などを通して、文化と暮らしの循環を育てます。
+            </Card>
+          </div>
+        </Section>
+
+        <Section id="current-film" eyebrow="Current Film" title="残すということ">
+          <p>
+            祖父の世代が地域に残した桜並木や営みを起点に、「人はなぜ地域のために生きるのか」を探るドキュメンタリー。
+          </p>
+          <p className="pt-3 text-neutral-600">
+            Documentary in Progress — 地域に残された想いと、未来への責任を見つめ直す映画プロジェクトです。
+          </p>
+          <div className="pt-8">
+            <a
+              href="https://nokosu-film.vercel.app/"
+              className="inline-flex min-h-12 items-center justify-center rounded-full border border-neutral-300 bg-white px-6 py-3 text-base font-medium text-neutral-900 transition-colors hover:bg-neutral-50"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              映画LPを見る
+            </a>
+          </div>
+        </Section>
+
+        <Section id="family-project" eyebrow="Family Project" title="みかんの取り組み">
+          <p>
+            土地の恵みや暮らしの循環につながる取り組みとして、家族の農とものづくりの活動ともゆるやかに連携していきます。
+          </p>
+          <p className="pt-3 text-neutral-600">父のみかんサイト：準備中</p>
+        </Section>
+
+        <Section id="contact" eyebrow="Contact" title="ご相談・ご連絡">
+          <p>
+            映画制作、上映、地域プロジェクト、合宿などのご相談は、下記メールまでご連絡ください。
+          </p>
+          <div className="pt-8">
+            <a
+              href="mailto:info@spotlight-films.jp"
+              className="inline-flex min-h-12 items-center justify-center rounded-full bg-neutral-900 px-6 py-3 text-base font-medium text-white shadow-sm transition-colors hover:bg-neutral-800"
+            >
+              info@spotlight-films.jp
+            </a>
+          </div>
+        </Section>
       </main>
+
+      <footer className="border-t border-neutral-200 px-6 py-14">
+        <div className="mx-auto max-w-5xl text-sm text-neutral-600">
+          <p>© SPOTLIGHT FILMS</p>
+        </div>
+      </footer>
+    </div>
+  );
+}
+
+function Section({
+  id,
+  eyebrow,
+  title,
+  children,
+}: {
+  id: string;
+  eyebrow: string;
+  title: string;
+  children: React.ReactNode;
+}) {
+  return (
+    <section id={id} className="border-t border-neutral-200 px-6 py-20 md:py-24">
+      <div className="mx-auto max-w-5xl">
+        <p className="text-xs tracking-[0.3em] text-neutral-500">{eyebrow}</p>
+        <h2
+          className="mt-4 text-2xl leading-snug tracking-wide text-neutral-900 md:text-3xl"
+          style={{ fontWeight: 300 }}
+        >
+          {title}
+        </h2>
+        <div
+          className="pt-8 text-lg leading-[1.9] text-neutral-700 md:text-xl md:leading-[1.9]"
+          style={{ fontWeight: 300 }}
+        >
+          {children}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function DefinitionTerm({ label, value }: { label: string; value: string }) {
+  return (
+    <div className="rounded-xl border border-neutral-200 bg-white p-5">
+      <dt className="text-sm tracking-wide text-neutral-500">{label}</dt>
+      <dd className="pt-2 text-lg text-neutral-900">{value}</dd>
+    </div>
+  );
+}
+
+function Card({ title, children }: { title: string; children: React.ReactNode }) {
+  return (
+    <div className="rounded-2xl border border-neutral-200 bg-white p-6">
+      <h3 className="text-lg font-medium tracking-wide text-neutral-900">
+        {title}
+      </h3>
+      <p className="pt-3 text-lg leading-[1.9] text-neutral-700">{children}</p>
     </div>
   );
 }
